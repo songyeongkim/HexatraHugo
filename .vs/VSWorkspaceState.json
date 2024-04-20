@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\content",
+    "\\content\\docs",
+    "\\layouts",
+    "\\layouts\\partials",
+    "\\layouts\\_default",
+    "\\themes",
+    "\\themes\\hextra",
+    "\\themes\\hextra\\layouts",
+    "\\themes\\hextra\\static"
+  ],
+  "SelectedNode": "\\hugo.yaml",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,48 @@
+﻿baseURL: https://example.org/
+languageCode: en-us
+title: My New Hugo Site
+theme: hextra
+
+menu:
+  main:
+    - name: 교회안내
+      pageRef: /docs
+      weight: 1
+    - name: 사사모안내
+      pageRef: /blog
+      weight: 2
+    - name: 아프리카선교
+      pageRef: /about
+      weight: 3
+    - name: 아프리카선교
+      pageRef: /about
+      weight: 4
+    - name: 두증인
+      pageRef: /about
+      weight: 5
+    - name: 교회소식
+      pageRef: /about
+      weight: 6
+    - name: 인터넷방송국
+      pageRef: /about
+      weight: 7
+    - name : 테스트1
+      pageRef: 인터넷방송국/about
+      parent: 인터넷방송국
+      weight: 1
+    - name : 테스트2
+      pageRef: 인터넷방송국/about
+      parent: 인터넷방송국
+      weight: 2
+
+
+params:
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/logo.png
+      dark: images/logo-dark.svg
+      link: /
+      width: 120
+      height: 60
