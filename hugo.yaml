@@ -3,6 +3,7 @@ languageCode: en-us
 title: My New Hugo Site
 theme: hextra
 
+
 menu:
   main:
     - name: 교회안내
@@ -37,6 +38,8 @@ menu:
 
 
 params:
+  page:
+    width: wide
   navbar:
     displayTitle: false
     displayLogo: true
@@ -46,3 +49,30 @@ params:
       link: /
       width: 120
       height: 60
+
+
+module:
+  module.imports:
+    path : "github.com/bep/hugo-starter-tailwind-basic/v3"
+  module.hugoVersion:
+    extended : false
+    min      : "0.112.0"
+  module.mounts:
+    source : "assets"
+    target : "assets"
+  module.mounts:
+    source : "hugo_stats.json"
+    target : "assets/watching/hugo_stats.json"
+
+build:
+  buildStats:
+    disableClasses: false
+    disableIDs: false
+    disableTags: false
+    enable: true
+  cacheBusters:
+  - source: (postcss|tailwind)\.config\.js
+    target: (css|styles|scss|sass)
+  duplicateResourceFiles: false
+  noJSConfigInAssets: false
+  useResourceCacheWhen: fallback

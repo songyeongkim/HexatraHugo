@@ -1,0 +1,9 @@
+#nav-menu > li > ul 
+{
+    display:none;
+}
+
+#nav-menu > li:hover ul 
+{
+    display:block;
+}
