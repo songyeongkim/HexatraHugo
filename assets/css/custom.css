@@ -7,3 +7,11 @@
 {
     display:block;
 }
+
+.hx-rounded-none {
+    border-radius: unset;
+  }
+
+.hx-m-0{
+    margin: 0;
+}
