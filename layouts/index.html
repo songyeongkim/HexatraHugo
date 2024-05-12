@@ -10,7 +10,7 @@
           {{ partial "carousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "1000") }}
           <img class="hx-w-full hx-rounded-none hx-m-0" src="images/main_3.png">
         </div>
-        <section class="hx-grid hx-grid-cols-custom hx-my-2">
+        <section class="hx-grid custom-grid-cols hx-my-4">
           <div> 
             <p><</p> 
           </div>
@@ -22,8 +22,8 @@
                   <img src="images/recom_sum_0.png" alt="" class="hx-m-0">
                   <p>강력 추천!!!!!!! "너는 나의 친구라!" (24.3.2. 말씀과 중보 집회. 김옥경 목사님)</p>
                   <ul>
-                    <li>#김옥경목사</li>
-                    <li>#2024 김옥경목사 말씀중보집회</li>
+                    <li class="hx-px-2 hx-inline-block hx-text-sm custom-tag-color-pink">#김옥경목사</li>
+                    <li class="hx-px-2 hx-inline-block hx-text-sm custom-tag-color-yellow">#2024 김옥경목사 말씀중보집회</li>
                   </ul>
                 </div>
               </li>
@@ -32,8 +32,8 @@
                   <img src="images/recom_sum_0.png" alt="" class="hx-m-0">
                   <p>강력 추천!!!!!!! "너는 나의 친구라!" (24.3.2. 말씀과 중보 집회. 김옥경 목사님)</p>
                   <ul>
-                    <li>#김옥경목사</li>
-                    <li>#2024 김옥경목사 말씀중보집회</li>
+                    <li class="hx-px-2 hx-inline-block hx-text-sm custom-tag-color-pink">#김옥경목사</li>
+                    <li class="hx-px-2 hx-inline-block hx-text-sm custom-tag-color-yellow">#2024 김옥경목사 말씀중보집회</li>
                   </ul>
                 </div>
               </li>
@@ -42,15 +42,5 @@
           <div> > </div>
         </section>
     </article>
-    <!--
-    <article class="wide hx-w-full hx-break-words hx-flex hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-justify-center hx-pb-8 hx-pr-[calc(env(safe-area-inset-right)-1.5rem)]">
-      <main class="hx-w-full hx-min-w-0 hx-max-w-6xl hx-px-6 hx-pt-4 md:hx-px-12">
-        <h1 class="hx-text-center hx-mt-2 hx-text-4xl hx-font-bold hx-tracking-tight hx-text-slate-900 dark:hx-text-slate-100">{{ .Title }}</h1>
-        
-          
-        </div>
-      </main>
-    </article>
-  -->
   </div>
 {{ end }}

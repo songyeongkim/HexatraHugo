@@ -611,6 +611,10 @@ video {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
 }
+.hx-my-4 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
 .-hx-mb-0 {
   margin-bottom: -0px !important;
 }
@@ -866,9 +870,6 @@ video {
   -webkit-appearance: none !important;
      -moz-appearance: none !important;
           appearance: none !important;
-}
-.hx-grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
 .hx-flex-col {
   flex-direction: column !important;

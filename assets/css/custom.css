@@ -18,7 +18,7 @@ li
     margin: 0;
 }
 
-.hx-grid-cols-custom
+.custom-grid-cols
 {
     grid-template-columns: 10% 80% 10%;
 }
@@ -26,6 +26,16 @@ li
 .hx-border-b
 {
 
+}
+
+.custom-tag-color-pink
+{
+    background-color: #FFE0E0;
+}
+
+.custom-tag-color-yellow
+{
+    background-color: #F1EBCA;
 }
 
 
