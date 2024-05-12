@@ -8,12 +8,24 @@
     display:block;
 }
 
-.hx-rounded-none {
-    border-radius: unset;
-  }
+li
+{
+    list-style: none;
+}
 
-.hx-m-0{
+.content ul
+{
     margin: 0;
+}
+
+.hx-grid-cols-custom
+{
+    grid-template-columns: 10% 80% 10%;
+}
+
+.hx-border-b
+{
+
 }
 
 

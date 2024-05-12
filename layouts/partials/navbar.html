@@ -28,7 +28,7 @@
             {{- end }}
         </a>
 
-        <ul id="nav-menu" class="hx-h-full">
+        <ul id="nav-menu" class="hx-h-full max-md:hx-hidden">
             {{- $currentPage := . -}}
             {{ range .Site.Menus.main }}
             {{- if eq .Params.type "search" -}}
@@ -50,7 +50,7 @@
             <li title="{{ or (T .Identifier) .Name | safeHTML }}"
                href="{{ $link }}"
                {{ if $external }} target="_blank" rel="noreferer" {{ end }}
-               class="hx-cursor-pointer hx-relative hx-inline-block hx-h-full align-middle hover:hx-bg-gray-800/5">
+               class="hx-align-middle hx-cursor-pointer hx-relative hx-inline-block hx-h-full align-middle hover:hx-bg-gray-800/5">
                 <a class="hx-p-4 hx-flex hx-h-full hx-items-center">
                     <p class="hx-text-sm hx-p-1 hx-text-center">{{ or (T .Identifier) .Name | safeHTML }}</p>
                     <svg fill="#FFAAAA" class="hx-inline-block fill-red-400" width="10" height="10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -84,7 +84,7 @@
                 <li title="{{ or (T .Identifier) .Name | safeHTML }}"
                     href="{{ $link }}"
                     {{ if $external }} target="_blank" rel="noreferer" {{ end }}
-                    class="hx-cursor-pointer hx-inline-block hx-h-full align-middle hover:hx-bg-gray-800/5">
+                    class="hx-cursor-pointer hx-inline-block hx-h-full hx-align-middle hover:hx-bg-gray-800/5">
                     <a class="hx-p-4 hx-flex hx-h-full hx-items-center">
                         <p class="hx-text-sm hx-p-1 hx-text-center">{{ or (T .Identifier) .Name | safeHTML }}</p>
                         <svg fill="#FFAAAA" class="hx-fill-red-400 hx-inline-block" width="10" height="10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
@@ -98,24 +98,26 @@
             {{- end -}}
             {{ end }}
 
-            <li class="hx-cursor-pointer hx-relative hx-inline-block hx-h-full align-middle">
+            <li class="hx-align-middle hx-cursor-pointer hx-relative hx-inline-block hx-h-full">
                 <select name="language" id=""
-                class="hx-text-sm hx-mx-2">
+                class="hx-p-4 hx-flex hx-h-full hx-items-center hx-text-sm hx-mx-2 hx-bg-none">
                     <option value="korean">한국어</option>
                     <option value="english">English</option>
                 </select>
             </li>
             
-            <li class="hx-cursor-pointer hx-relative hx-inline-block hx-h-full align-middle">
-                <div class="hx-mx-2 hx-inline-block">
-                    <img width="30" src="/images/searchicon.png" alt="">
+            <li class="hx-align-middle hx-cursor-pointer hx-relative hx-inline-block hx-h-full">
+                <div class="hx-flex hx-h-full hx-items-center">
+                    <img width="30" class="hx-block" src="images/searchicon.png">
                 </div>
-            </li>
+            </li> 
             
-            <li class="hx-cursor-pointer hx-relative hx-inline-block hx-h-full align-middle">
-                <button class="hx-text-sm hx-border hx-rounded hx-px-4 hx-py-2">
-                    새신자등록
-                </button>
+            <li class="hx-align-middle hx-cursor-pointer hx-relative hx-inline-block hx-h-full">
+                <div class="hx-p-4 hx-flex hx-h-full hx-items-center">
+                    <button class="hx-text-sm hx-border hx-rounded hx-px-4 hx-py-2">
+                        새신자등록
+                    </button>
+                </div>
             </li>  
         </ul>
 
